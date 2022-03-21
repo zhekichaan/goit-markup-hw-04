@@ -199,6 +199,9 @@ svg {
 .hero {
   background-color: var(--secondary-background-color);
   text-align: center;
+	max-width: 1600px;
+	height: 600px;
+	margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
 	background-image: linear-gradient( 
@@ -258,10 +261,17 @@ svg {
 }
 
 .feature-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 270px;
+	height: 120px;
 	border-radius: 4px;
-	padding: 25px 100px;
 	background-color: var(--primary-bg-color);
 }
+
+/* .feature-box .icon {
+} */
 
 .company-features h3 {
   margin-top: 30px;
@@ -432,12 +442,7 @@ svg {
 	margin-right: 70px	;
 }
 
-.socials-footer {
-	padding-top: 12px;
-	padding-bottom: 40px;
-}
-
-.socials-footer h3 {
+.socials-footer p {
 	color: var(--secondary-text-color);
 	font-weight: 700;
 	line-height: 1.1;
@@ -490,6 +495,7 @@ svg {
 
 .main-footer {
 	display: flex;
+	align-items: baseline;
 }
 
 /* Filter */
@@ -546,7 +552,8 @@ svg {
   margin-bottom: 0px;
 }
 
-.portfolio a {
+.portfolio-link {
+	display: block;
   text-decoration: none;
 }
 
@@ -578,7 +585,7 @@ svg {
   border-bottom: 1px solid var(--primary-border-color);
 }
 
-.portfolio .item:hover {
+.portfolio-link:hover {
 	box-shadow: 0px 1px 1px var(--primary-shadow-color), 
 	0px 4px 4px var(--shadow-color), 
 	1px 4px 6px var(--primary-shadow-color);
